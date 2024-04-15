@@ -13,7 +13,7 @@ namespace Flow.Launcher.Plugin.TerrariaWiki
         private PluginInitContext _context;
        
         // Define variabkes for the plugin to use
-        private readonly string base_url = "https://terraria.fandom.com/";
+        private readonly string base_url = "https://terraria.wiki.gg/wiki/Terraria_Wiki/";
         private string query_url;
         private string jsonResult;
         private string finalUrl;
@@ -69,7 +69,7 @@ namespace Flow.Launcher.Plugin.TerrariaWiki
                     results.Add(new Result
                     {
                         Title = $"{item.title}",
-                        SubTitle = $"https://terraria.fandom.com/wiki/" + itemWithunderscores,
+                        SubTitle = $"https://terraria.wiki.gg/wiki/Terraria_Wiki/" + itemWithunderscores,
                         Action = e =>
                         {
                             // Make final url to search
